@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Лилит Манучарян</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+
+	<div id="_container-bg">
+	</div>
+
+	<div id="_main-container">
+		<div class="content">
+			<header>
+				<div id="_mobile-menu">
+					<img src="assets/img/menu.png" />
+				</div>
+				<ul>
+					<li class="nav-item"><a href="#_personal-info">Личная информация</a></li>
+					<li class="nav-item"><a href="#_experience">Опыт</a></li>
+					<li class="nav-item"><a href="#_js">Javascript</a></li>
+					<li class="nav-item"><a href="#_about-me">О себе</a></li>
+				</ul>
+			</header>
+		
+			<section id="_personal-info">
+				<h1 id="_main-title">Анкета</h1>
+			
+				<div class="icon-container">
+					<img src="assets/img/journal-icon.png" alt="Анкета"/>
+				</div>
+				
+				<p class="title">Личная информация</p>
+
+				<form id="_personal-info-form" method="post" action="">
+					<input type="text" name="name" placeholder="ФИО" />
+					<input id="_date" type="date" name="bday" placeholder="Год рождения" />
+					<input type="text" name="living-place" placeholder="Место проживания" />
+					<input type="text" name="skype" placeholder="Skype" />
+					<input type="email" name="email" placeholder="E-mail" />
+				</form>
+			</section>
+
+			<section id="_experience">
+
+				<div class="icon-container">
+					<img src="assets/img/list-icon.png" alt="Анкета"/>
+				</div>
+
+				<p class="title">Расскажите о своем опыте</p>
+
+				<form id="_experiences-form" method="post" action="">
+					<div>
+						<label><input type="checkbox" name="bem-oocss" />БЕМ/OOCSS</label>
+						<label><input type="checkbox" name="stylus-less-sass" />Stylus/LESS/SASS</label>
+						<label><input type="checkbox" name="svg" />Работаю с SVG</label>
+					</div>
+					<div>
+						<label><input type="checkbox" name="semantic-markup" />Верстаю семантично</label>
+						<label><input type="checkbox" name="es2015-es2016" />ES2015-ES2016</label>
+						<label><input type="checkbox" name="gulp-grunt" />Gulp/GRUNT</label>
+					</div>
+					<div>
+						<label><input type="checkbox" name="webpack" />Webpack</label>
+						<label><input type="checkbox" name="jquery" />jQuery</label>
+						<label><input type="checkbox" name="git" />Использую Git</label>
+					</div>
+				</form>
+					
+			</section>
+
+			<section id="_js">
+
+				<div class="icon-container">
+					<img src="assets/img/js-icon.png" alt="JavaScript"/>
+				</div>
+
+				<p class="title">Уровень владения JavaScript</p>
+
+				<form id="_js-knowledge-form" method="post" action="">
+					<div>
+						<div id="_knowledge-level-block">
+							<p>Не владею</p>
+							<p>Использую готовые<br />решения</p>
+							<p>Использую готовые решения и умею их переделывать</p>
+							<p>Пишу сложный с js нуля</p>
+						</div>
+						<div id="_range-border"></div>
+						<input type="range" name="js-knowledge"  min="0" max="100" step="1" value="25"/>
+					</div>
+				</form>
+				
+			</section>
+
+			<section id="_about-me">
+				
+				<div class="icon-container">
+					<img src="assets/img/profile-icon.png" alt="О себе"/>
+				</div>
+
+				<p id="_about-title" class="title">Расскажите о себе</p>
+				<p id="_about-txt">Напишите несколько предложений, чем привлекла наша вакансия, и что вы ожидаете от работы у нас</p>
+
+				<form id="_about-form" method="post" action="">
+					<textarea placeholder="Понравилась тем, что..." rows="9"></textarea>
+				</form>
+
+				<div id="_submit-btn-block">
+					<button id="_submit" type="submit">Готово</button>
+				</div>
+
+			</section>
+		</div>
+	</div>
+</body>
+</html>
